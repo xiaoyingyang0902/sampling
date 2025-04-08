@@ -10,10 +10,23 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Xiaoying Yang
 
 ```
-Please write your explanation here...
+A total of three sampling stages are present in the model.
+
+Stage one: This relates to the content from the blog post about supposing that exactly 10% of people at every event are infected. In the context of the code we are examining, the ’np.random.choice’ function is used to randomly choose 10% of the total population (who attended either the wedding or the brunch event) to be ‘’infected’.
+Therefore, the sample size is 10% of the total population, and the sampling frame is the sum of the population who attended either the wedding or the brunch event. The distribution should be uniform, as everyone has the same probability of being infected.
+
+Stage two: This relates to the content from the blog post about imperfect primary contact tracing, and an infection has an estimated chance of 20% to be traced. In the context of the code we are examining, the ’np.random.rand’ function is used to randomly choose 20% of the infected population as ‘successfully traced’, and 80% as ‘’not traced’.
+The sample size is 20% of the infected population, and the sampling frame is the sum of the infected individuals. The distribution should be binomial, as each infected individual has 20% probability of being traced (success) and 80% probability of not being traced (failure).
+
+Stage three: This relates to the content from the blog post about secondary contact tracing. If two infections are traced to the same event, then every person who attended that event would be tested, and all infections associated with that event would be identified. It used conditional section functions to filter those events where at least two infections are traced.
+The sample size is the events where at least two infected people are traced. The sampling frame is all events that have traced infections. The distribution will be biased to the right (overestimate) toward larger events like weddings, as more infections will likely be traced, given that a larger group of people attend those events.
+
+
+When the Python script is run, however, the code doesn’t seem to reproduce the graphs from the original blog post. The true proportion and the observed proportion from the code output agree more with each other, which is different from the blog post. By modifying the number of repetitions in the simulation to 100, the reproducibility of the results decreases more than that of 1000 repetitions. 
+I insert a random seed before the def statement. It helps the model to select the exact same people at the three sampling stages, leading to a reproducible output.
 
 ```
 
