@@ -40,30 +40,29 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+To investigate the reasons for a high turnover rate within the entry- and lower-level positions of a large tech company over the past few months; and to gather useful information on necessary changes to improve employee satisfaction.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target population: All current and recently exited employees in entry- and lower-level positions of this company
+Sampling frame: All current and recently exited staff of this company
+Sampling units: Individual employees who are currently in, or have recently left, an entry- or lower-level position
+Overall sampling strategy: A combination of stratified sampling (for current employees) and convenience sampling (for recently exited employees).
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. What is/was your department?
+2. What is/was your job title?
+3. How long have you been (or were you) with the company?
+4. How satisfied are/were you with the following aspects of your role? (salary; work-life balance; team collaboration; opportunities for career advancement; workplace equity and inclusion)
+5. What were the main reasons for your exit? (If apply)
+6. What improvements would you recommend to make the company a better place to work?
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +70,23 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: Stratified sampling 
+2. Sample size: The target sample size was 20000,and the actual number of respondents was 16149
+3. Target population: All persons 15 years of age and older in Canada, excluding residents of the three territories and full-time residents of institutions.
+4. Sampling frame: Lists of telephone numbers in use available to Statistics Canada, and list of dwellings within the ten provinces
+5. Survey mode(s): electronic questionnaire and computer-assisted telephone interviewing
+6. Timeline: 2018-09-04 to 2018-12-28
+7. Response rate: 41.9%
+8. Weights: Weighting of persons was used for data process, by dividing number of records samples in the stratum with total number of records in the stratum from the survey frame.
+9. Data processing: Data handling activities including data capture, coding, edit and imputation, creation of combined and derived variables were used in data processing.
+10. Cleaning, imputation, etc: Valid values were supplied for those variables that had been identified for a change either because of invalid information or because of missing information. 
+11. Sources of error: sampling error and non-sampling error (imperfect coverage, non-response, response errors, and processing errors)
+12. Limitations, known biases, etc: This survey may underrepresent diverse and racialized groups, and it also geographically excludes three territories, which may result in a coverage bias.
+13. Link to documentation and any additional sources used
+https://givingandvolunteering.ca/knowing-what-you-know-using-data-to-improve-your-fundraising-practice/#:~:text=While%20the%20GSS%2DGVP%20data%20can%20be%20extremely,more%20inclusive%20structures%20that%20begin%20to%20address
+https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
+https://abacus.library.ubc.ca/dataset.xhtml?persistentId=hdl:11272.1/AB2/GBFDYG
+https://www150.statcan.gc.ca/n1/pub/89f0115x/89f0115x2019001-eng.htm
 ```
 
 ## Rubric
